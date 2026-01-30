@@ -1,16 +1,27 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import PostDetail from './pages/PostDetail'
 
 function App() {
+  const [data, setData] = useState([])
+  
+  useEffect(()=>{
+    async function getData() {
+      const respon = await fetch("/data.json")
+      const data = await respon.json()
+      setData(data)
+    }
+    getData()
+  }, [])
+  
   const router = createBrowserRouter([
     { path: "/",
-      element: <Home/>
+      element: <Home data={data}/>
     },
-    { path: "/:username/:slug",
-      element: <PostDetail/>
+    { path: "/:userName/:slug",
+      element: <PostDetail />
     }
   ])
   return <RouterProvider router={router}/>
