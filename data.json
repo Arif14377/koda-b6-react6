@@ -5,7 +5,7 @@
         "userName": "michalmalewicz",
         "title": "The End of Dashboards and Design Systems",
         "slug": "The-End-of-Dashboards-and-Design-Systems",
-        "sub-title": "Design is becoming quietly human again.",
+        "subTitle": "Design is becoming quietly human again.",
         "image": "https://placehold.co/600x400.png",
         "badge": true,
         "article": "Design systems were built to scale manual interface creation. They’re now content fodder for AI. The perfect worker for parsing components, outlining specs, and shuffling identical boxes around. One that doesn’t complain about the boring parts of it all. Now it’s starting to kill them off. Imagine building yet another form that looks like all the other forms (Hi Jakob’s law!). This is as refreshing as competitive clicking accept on cookie banners."
@@ -16,7 +16,7 @@
         "userName": "alvisng",
         "title": "The Skills You’re Losing While AI Handles the Boring Parts",
         "slug": "The-Skills-You’re-Losing-While-AI-Handles-the-Boring-Parts",
-        "sub-title": "Your velocity is up. Your capability is down.",
+        "subTitle": "Your velocity is up. Your capability is down.",
         "image": "https://placehold.co/600x400.png",
         "badge": false,
         "article": ""
@@ -27,7 +27,7 @@
         "userName": "jacobbennet",
         "title": "Never forget anything",
         "slug": "Never-forget-anything",
-        "sub-title": "The software engineer’s over-engineered knowledge management system.",
+        "subTitle": "The software engineer’s over-engineered knowledge management system.",
         "image": "https://placehold.co/600x400.png",
         "badge": false,
         "article": "I take lots of notes. And I forget lots of things. I’ve written thousands of notes. Sometimes they’re as benign as a quick shopping list for a trip to the market. Or I’ll jot something down that someone said in a meeting. And I have plenty of book outlines that hold my mental model of a concept I’ve studied. But I’ve lost more ideas than I’ve remembered. I’ve thrown away physical notebooks and deleted digital ones when they became too difficult to search through. My personal knowledge “system” was more like a junk drawer than a library."

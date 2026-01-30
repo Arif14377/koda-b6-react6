@@ -21,7 +21,7 @@ function App() {
       element: <Home data={data}/>
     },
     { path: "/:userName/:slug",
-      element: <PostDetail />
+      element: <PostDetail data={data}/>
     }
   ])
   return <RouterProvider router={router}/>
