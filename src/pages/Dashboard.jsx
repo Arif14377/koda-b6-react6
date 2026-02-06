@@ -1,8 +1,8 @@
 import Header from "../components/Header.jsx"
-import ModalCreatePost from "../components/ModalCreatePost.jsx";
+import { Link } from "react-router-dom"
 
-function Dashboard (props) {
-    const {data} = props
+function Dashboard () {
+    const data = JSON.parse(localStorage.getItem("data"))
 
     return (
         <div className="flex flex-col gap-10 justify-center items-center">
@@ -12,18 +12,18 @@ function Dashboard (props) {
                     <h1 className="text-4xl font-bold ">Dashboard</h1>
                     <p>My post list</p>
                 </div>
-                <div className="flex flex-col gap-3 w-fit">
+                <div className="flex flex-col gap-3 w-full">
                     {
                         data.map(item => {
                             return (
-                                <div key={item.id} className="flex gap-2 h-25 p-2 border border-gray-400 rounded">
+                                <Link to={`/@my-post-${data.id}/${data.slug}`} key={item.id} className="flex gap-2 h-25 p-2 border border-gray-400 rounded">
                                     <img src={item.image} alt={item.title} className="w-30 object-cover"/>
                                     <div className="flex flex-col">
                                         <h2>{item.title}</h2>
-                                        <p>{item.subTitle}</p>
+                                        <p>{item.content}</p>
                                     </div>
-                                </div>
-                            )
+                                </Link>
+                            );
                         })
                     }
                 </div>

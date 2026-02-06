@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import PostDetail from './pages/PostDetail'
 import Dashboard from './pages/Dashboard'
-import ModalCreatePost from "./components/ModalCreatePost.jsx";
 
 function App() {
   const [data, setData] = useState([])
@@ -27,7 +26,7 @@ function App() {
     },
     {
       path: "/dashboard",
-      element: <Dashboard data={data}/>
+      element: <Dashboard/>
     }
   ])
   return (

@@ -6,6 +6,7 @@ function PostDetail(props) {
     const {data} = props
     const {userName, slug} = useParams()
 
+    // TODO: ubah data tampil mengambil dari local storage.
     const dataTampil = data.find(el => el.userName === userName.slice(1) && el.slug === slug)
     // console.log(dataTampil)
 
