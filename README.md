@@ -11,5 +11,7 @@ Membuat web cloning medium.
 
 ## Implementasi Konsep
 - useParam
+- useNavigate
 - useSearchParam
 - react router dom
+- outlet

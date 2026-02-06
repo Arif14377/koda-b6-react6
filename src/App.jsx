@@ -3,6 +3,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import PostDetail from './pages/PostDetail'
+import Dashboard from './pages/Dashboard'
+import ModalCreatePost from "./components/ModalCreatePost.jsx";
 
 function App() {
   const [data, setData] = useState([])
@@ -22,8 +24,16 @@ function App() {
     },
     { path: "/:userName/:slug",
       element: <PostDetail data={data}/>
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard data={data}/>
     }
   ])
-  return <RouterProvider router={router}/>
+  return (
+      <>
+        <RouterProvider router={router}/>
+      </>
+  )
 }
 export default App
